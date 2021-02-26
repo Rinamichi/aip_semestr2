@@ -1,0 +1,2 @@
+D:\VS\Task_3\Debug\Task_3.exe
+D:\VS\Task_3\Debug\Task_3.pdb
