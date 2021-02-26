@@ -1,0 +1,2 @@
+D:\АиП VS\les_1\Debug\les_1.exe
+D:\АиП VS\les_1\Debug\les_1.pdb
