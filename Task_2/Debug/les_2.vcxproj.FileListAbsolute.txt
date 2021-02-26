@@ -1,0 +1,2 @@
+D:\VS\les_2\Debug\les_2.exe
+D:\VS\les_2\Debug\les_2.pdb

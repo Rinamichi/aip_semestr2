@@ -1,0 +1,4 @@
+﻿  les_2.cpp
+D:\VS\les_2\les_2.cpp(7,20): warning C4305: инициализация: усечение из "double" в "float"
+D:\VS\les_2\les_2.cpp(6,17): warning C4101: c: неиспользованная локальная переменная
+  les_2.vcxproj -> D:\VS\les_2\Debug\les_2.exe
