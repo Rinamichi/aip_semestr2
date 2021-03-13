@@ -1,0 +1,2 @@
+Square of number a = 5929
+Cube of number a = 456533
