@@ -1,2 +1,4 @@
 D:\VS\Task_6\Debug\Task_6.exe
 D:\VS\Task_6\Debug\Task_6.pdb
+D:\VS\aip_semestr2\Task_6\Debug\Task_6.exe
+D:\VS\aip_semestr2\Task_6\Debug\Task_6.pdb
