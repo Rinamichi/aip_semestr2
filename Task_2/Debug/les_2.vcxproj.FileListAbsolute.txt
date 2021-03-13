@@ -1,2 +1,4 @@
 D:\VS\les_2\Debug\les_2.exe
 D:\VS\les_2\Debug\les_2.pdb
+D:\VS\aip_semestr2\Task_2\Debug\les_2.exe
+D:\VS\aip_semestr2\Task_2\Debug\les_2.pdb
