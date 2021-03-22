@@ -1,44 +1,30 @@
-﻿#include <iostream>
+﻿/*Задание 1.
+  Вывести на экран Первую букву имени из символов "*" (звездочка) */
+
+#include <iostream>
 #include "fstream"
+
+using namespace std;
 
 int main()
 {
-    //std::cout << "    ***  " << std::endl
-    //          << "   *  ** " << std::endl
-    //          << "      ** " << std::endl
-    //          << "     * * " << std::endl
-    //          << "     * * " << std::endl
-    //          << "   **  * " << std::endl
-    //          << "   **  * " << std::endl
-    //          << "   *   * " << std::endl
-    //          << "  ****** " << std::endl
-    //          << "  *    * " << std::endl
-    //          << "  *    * " << std::endl
-    //          << "**     **" << std::endl;
+        ofstream f;
+        f.open("Task_1.txt");
 
+      f << "    ***  " << endl
+        << "   *  ** " << endl
+        << "      ** " << endl
+        << "     * * " << endl
+        << "     * * " << endl
+        << "   **  * " << endl
+        << "   **  * " << endl
+        << "   *   * " << endl
+        << "  ****** " << endl
+        << "  *    * " << endl
+        << "  *    * " << endl
+        << "**     **" << endl;
 
-        std::ofstream outFile;
-        outFile.open("Task_1.txt");
-
-    outFile << "    ***  " << std::endl
-        << "   *  ** " << std::endl
-        << "      ** " << std::endl
-        << "     * * " << std::endl
-        << "     * * " << std::endl
-        << "   **  * " << std::endl
-        << "   **  * " << std::endl
-        << "   *   * " << std::endl
-        << "  ****** " << std::endl
-        << "  *    * " << std::endl
-        << "  *    * " << std::endl
-        << "**     **" << std::endl;
-
-        outFile.close();
-
-
-
-    std::getchar();
-    std::getchar();
+        f.close();
 
     return 0;
 }
