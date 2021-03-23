@@ -1,24 +1,26 @@
-﻿#include <iostream>
+﻿/* Задание 3. 
+Пользователь вводит число. Выведите на экран квадрат этого числа, куб этого 
+числа. */
+
+#include <iostream>
 #include "cmath"
 #include "fstream"
 
+using namespace std;
+
 int main()
 {
-
-    std::ofstream f;
+    ofstream f;
     f.open("Task_3.txt");
 
     float a;
 
-    std::cin >> a;
-    f << "Square of number a = " << pow(a, 2) << std::endl;
-    f << "Cube of number a = " << pow(a, 3) << std::endl;
+    cin >> a;
+    f << "Square of number a = " << pow(a, 2) << endl;
+    f << "Cube of number a = " << pow(a, 3) << endl;
     return 0;
 
     f.close();
-
-    std::getchar();
-    std::getchar();
 }
 
 
