@@ -11,4 +11,4 @@ If you need from erg/sec to Gcal / min tap 10
 If you need from erg/sec to cal/h tap 11
 If you need from erg/sec to J/h tap 12
 Enter your number : 
-3.489e+15
+0.4187
