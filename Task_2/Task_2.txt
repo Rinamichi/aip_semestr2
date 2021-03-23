@@ -1,2 +1,2 @@
-Square of ellipse = 21.98
-Perimetre of ellipse = 28.99
+Square of ellipse = 47.1
+Perimetre of ellipse = 25.55

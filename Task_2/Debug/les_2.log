@@ -1,4 +1,4 @@
 ﻿  les_2.cpp
-D:\VS\aip_semestr2\Task_2\les_2.cpp(12,20): warning C4305: инициализация: усечение из "double" в "float"
-D:\VS\aip_semestr2\Task_2\les_2.cpp(11,17): warning C4101: c: неиспользованная локальная переменная
+D:\VS\aip_semestr2\Task_2\les_2.cpp(17,20): warning C4305: инициализация: усечение из "double" в "float"
+D:\VS\aip_semestr2\Task_2\les_2.cpp(16,17): warning C4101: c: неиспользованная локальная переменная
   les_2.vcxproj -> D:\VS\aip_semestr2\Task_2\Debug\les_2.exe
