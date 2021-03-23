@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿/* Задание 6.
+Вводятся три целых числа. Наибольшее увеличить на 5, наименьшее уменьшить 3. */
+
+#include <iostream>
 #include "fstream"
 
 using namespace std;

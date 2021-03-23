@@ -1,2 +1,2 @@
-So, num2 is the biggest then num2 + 5: 11
-So, num3 is the smallest then num3 - 3: -1
+So, num3 is the biggest then num3 + 5: 12
+So, num2 is the smallest then num2 - 3: 1
