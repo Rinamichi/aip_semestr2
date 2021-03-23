@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿/* Задание 2.
+Пользователь вводит параметры фигуры. Найти периметр и площадь фигуры: Эллипс. */
+
+#include <iostream>
 #include "cmath"
 #include "fstream"
 
