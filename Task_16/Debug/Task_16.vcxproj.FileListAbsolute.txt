@@ -1,2 +1,0 @@
-D:\VS\aip_semestr2\Task_16\Debug\Task_16.exe
-D:\VS\aip_semestr2\Task_16\Debug\Task_16.pdb

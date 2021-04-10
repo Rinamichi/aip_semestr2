@@ -1,3 +1,0 @@
-﻿  Task_16.cpp
-D:\VS\aip_semestr2\Task_16\Task_16.cpp(36,23): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-  Task_16.vcxproj -> D:\VS\aip_semestr2\Task_16\Debug\Task_16.exe
