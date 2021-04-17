@@ -1,0 +1,4 @@
+D:\VS\aip_semestr2\Task_15\Debug\Task_15.exe
+D:\VS\aip_semestr2\Task_15\Debug\Task_15.pdb
+D:\Users\User\Desktop\Новая папка\Task_15\Debug\Task_15.exe
+D:\Users\User\Desktop\Новая папка\Task_15\Debug\Task_15.pdb
