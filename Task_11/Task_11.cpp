@@ -13,18 +13,18 @@ float H;
 int main()
 {
 
-    ofstream f;
-    f.open("Task_11.txt");
+    ofstream file;
+    file.open("Task_11.txt");
 
     cin >> H;
     for (int i = 0; i < H; i++) {
         for (int j = 0; j < i; j++)
-            f << 0;
-        f << endl;
+            file << 0;
+        file << endl;
     }
 
-    cout << endl;
+    file << endl;
 
-    f.close();
+    file.close();
 }
         
