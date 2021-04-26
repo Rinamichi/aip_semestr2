@@ -9,11 +9,18 @@ y = -2 * x * x + 3 * x - 1*/
 
 using namespace std;
 
+void func(float x, float dx, float f);
 float dx, x, fx, f;
 
 int main()
 {
 
+	func(x, dx, f);
+
+	return 0;
+}
+
+void func(float x, float dx, float f) {
 	ofstream file;
 	file.open("Task_13.txt");
 
@@ -38,7 +45,6 @@ int main()
 			<< endl;
 		x += fx;
 	}
-	return 0;
 
 	file.close();
 }
