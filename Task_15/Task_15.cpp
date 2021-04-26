@@ -6,6 +6,7 @@
 
 using namespace std;
 
+void func();
 float x, c, dy;
 int i = 7;
 int a = 2;
@@ -13,6 +14,14 @@ float y = 0;
 
 int main()
 {
+	func();
+
+	return 0;
+
+}
+
+void func(){
+
 	ofstream file;
 	file.open("Task_15.txt");
 
@@ -30,14 +39,12 @@ int main()
 		y = y + dy;
 
 		file << "dy = " << dy << endl
-		     << "i = " << i << endl
+			 << "i = " << i << endl
 			 << "a = " << a << endl;
 		file << endl;
 	}
 
 	file << "y = " << y << endl;
-
-	return 0;
 
 	file.close();
 }
