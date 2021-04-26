@@ -8,22 +8,32 @@
 
 using namespace std;
 
+void stairs(int H);
 float H;
 
 int main()
-{
+{    
+    ofstream inOut;
+    inOut.open("Task_11.txt");
 
-    ofstream file;
-    file.open("Task_11.txt");
+    stairs(H);
+     
+    inOut << endl;
+
+    inOut.close();
+}
+
+void stairs(int H){
+
+    ofstream inOut;
+    inOut.open("Task_11.txt");
 
     cin >> H;
     for (int i = 0; i < H; i++) {
         for (int j = 0; j < i; j++)
-            file << 0;
-        file << endl;
-    }
+            inOut << 0;
+            inOut << endl;
+    } 
 
-    file << endl;
-
-    file.close();
+    inOut.close();
 }
