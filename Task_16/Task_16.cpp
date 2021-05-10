@@ -7,25 +7,29 @@
 
 using namespace std;
 
-float x, c, dy;
+struct parametr {
+	float x, c, dy;
+};
+
 int a = 0;
 int n = 3;
 float y = 0;
 float ty = 0;
-  
+
 int main()
 {
+	parametr A;
 
 	fstream file;
 	file.open("Task_16.txt");
 
 	setlocale(LC_ALL, "Russian");
-	file << "Введите c (нечётное): " << endl;
-	cin >> c;
-	file << "Введите x: " << endl;
-	cin >> x;
+	cin >> A.c;
+	file << "Введите c (нечётное): " << A.c << endl;
+	cin >> A.x;
+	file << "Введите x: " << A.x << endl;
 
-	while (n < c) {
+	while (n < A.c) {
 
 		int F = 1;
 
@@ -33,19 +37,19 @@ int main()
 			F *= i;
 		}
 
-		dy = pow(-1, a + 1) * (pow(x, n)/F);
+		A.dy = pow(-1, a + 1) * (pow(A.x, n) / F);
 		n = n + 2;
 		a = a + 1;
-		ty = ty + dy;
+		ty = ty + A.dy;
 
 		file << "Выведем ty = " << ty << endl
 			<< "Выведем a = " << a << endl
 			<< "Выведем n = " << n << endl
-		    << endl;
-	} 
+			<< endl;
+	}
 
-	y = x + ty;
-	 
+	y = A.x + ty;
+
 	file << "Выведем финальный y: " << y << endl;
 
 	file.close();
