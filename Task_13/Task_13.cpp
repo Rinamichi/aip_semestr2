@@ -9,41 +9,44 @@ y = -2 * x * x + 3 * x - 1*/
 
 using namespace std;
 
-void func(float x, float dx, float f);
-float dx, x, fx, f;
+struct parametr {
+	float dx, x, fx, f;
+};
+
+void func(parametr A);
 
 int main()
 {
+	parametr pA;
 
-	func(x, dx, f);
-
-	return 0;
+	func(pA);
 }
 
-void func(float x, float dx, float f) {
+void func(parametr A) {
+
 	ofstream file;
 	file.open("Task_13.txt");
 
+	cin >> A.x;
 	file << "Table x and y. \ny = -2 * x * x + 3 * x - 1" << endl
-		<< "Enter x: " << endl;
-	cin >> x;
-	file << "Enter dx: " << endl;
-	cin >> dx;
-	file << "Enter fx: " << endl;
-	cin >> fx;
+		<< "Enter x: " << A.x << endl;
+	cin >> A.dx;
+	file << "Enter dx: " << A.dx << endl;
+	cin >> A.fx;
+	file << "Enter fx: " << A.fx << endl;
 
 	file << "\tx\t\ty\t" << endl;
 
 	file.precision(3);
 
-	while (x < dx) {
-		f = -2 * x * x + 3 * x - 1;
+	while (A.x < A.dx) {
+		A.f = -2 * A.x * A.x + 3 * A.x - 1;
 		file << "\t"
-			<< x
+			<< A.x
 			<< "\t\t"
-			<< f
+			<< A.f
 			<< endl;
-		x += fx;
+		A.x += A.fx;
 	}
 
 	file.close();

@@ -1,2 +1,2 @@
 ﻿  Task_13.cpp
-  Task_13.vcxproj -> D:\VS\aip_semestr2\Task_13\Debug\Task_13.exe
+D:\VS\aip_semestr2\Task_13\Task_13.cpp(22): error C4700: использована неинициализированная локальная переменная "pA"
