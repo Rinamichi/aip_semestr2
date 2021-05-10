@@ -9,42 +9,44 @@ y = sqrt(2 + 3 * x) + 72 * x + tg(4 * x + 31)*/
 
 using namespace std;
 
-void func(float x, float dx, float f);
-float dx, x, fx, f;
+struct parametr {
+	float dx, x, fx, f;
+};
+
+void func(parametr A);
 
 int main()
 {
-	
-	func(x, dx, f);
+	parametr pA;
 
-	return 0;
+	func(pA);
 }
 
-void func(float x, float dx, float f){
+void func(parametr A){
 
 	ofstream file;
 	file.open("Task_12.txt");
 
+	cin >> A.x;
 	file << "Table x and y. \ny = sqrt(2 + 3 * x) + 72 * x + tg(4 * x + 31)" << endl
-		<< "Enter x: " << endl;
-	cin >> x;
-	file << "Enter dx: " << endl;
-	cin >> dx;
-	file << "Enter fx: " << endl;
-	cin >> fx;
+		<< "Enter x: " << A.x << endl;
+	cin >> A.dx;
+	file << "Enter dx: " << A.dx << endl;
+	cin >> A.fx;
+	file << "Enter fx: " << A.fx << endl;
 
 	file << "\tx\t\ty\t" << endl;
 
 	file.precision(3);
 
-	while (x < dx) {
-		f = sqrt(2 + 3 * x) + 72 * x + tan(4 * x + 31);
+	while (A.x < A.dx) {
+		A.f = sqrt(2 + 3 * A.x) + 72 * A.x + tan(4 * A.x + 31);
 		file << "\t"
-			<< x
+			<< A.x
 			<< "\t\t"
-			<< f
+			<< A.f
 			<< endl;
-		x += fx;
+		A.x += A.fx;
 	}
 
 	file.close();
