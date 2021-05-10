@@ -13,111 +13,113 @@ int a;
 
 int main()
 {
-
+    setlocale(LC_ALL, "Russian");
     ofstream f;
     f.open("Task_5.txt");
 
-    f << "If you need from Gcal / min to cal/h tap 1" <<'\n';
-    f << "If you need from Gcal / min to J/h tap 2" << '\n';
-    f << "If you need from Gcal / min to erg/sec tap 3" << '\n';
-    f << "If you need from cal/h to Gcal / min tap 4" << '\n';
-    f << "If you need from cal/h to J/h tap 5" << '\n';
-    f << "If you need from cal/h to erg/sec tap 6" << '\n';
-    f << "If you need from J/h to Gcal / min tap 7" << '\n';
-    f << "If you need from J/h to cal/h tap 8" << '\n';
-    f << "If you need from J/h to erg/sec tap 9" << '\n';
-    f << "If you need from erg/sec to Gcal / min tap 10" << '\n';
-    f << "If you need from erg/sec to cal/h tap 11" << '\n';
-    f << "If you need from erg/sec to J/h tap 12" << '\n';
+    f << "Если тебе нужно перевести из Гкал/мин в кал/час нажми 1" <<'\n';
+    f << "Если тебе нужно перевести из Гкал/мин в Дж/час нажми 2" << '\n';
+    f << "Если тебе нужно перевести из Гкал/мин в эрг/с нажми 3" << '\n';
+    f << "Если тебе нужно перевести из кал/час в Гкал/мин нажми 4" << '\n';
+    f << "Если тебе нужно перевести из кал/час в Дж/час нажми 5" << '\n';
+    f << "Если тебе нужно перевести из кал/час в эрг/с нажми 6" << '\n';
+    f << "Если тебе нужно перевести из Дж/час в Гкал/мин нажми 7" << '\n';
+    f << "Если тебе нужно перевести из Дж/час в кал/час нажми 8" << '\n';
+    f << "Если тебе нужно перевести из Дж/час в эрг/с нажми 9" << '\n';
+    f << "Если тебе нужно перевести из эрг/с в Гкал/мин нажми 10" << '\n';
+    f << "Если тебе нужно перевести из эрг/с в кал/час нажми 11" << '\n';
+    f << "Если тебе нужно перевести из эрг/с в Дж/час нажми 12" << '\n';
+    
     cin >> a;
+
+    f << "Выбранный режим перевода: " << a << endl;
 
     switch(a)
     {
     case 1:
         float a;
-        f << "Enter your number : " << endl;
         cin >> a;
+        f << "Введите число: " << a << endl;
         f << a * 6 * pow(10, 10) << '\n';
         break;
 
     case 2:
         float b;
-        f << "Enter your number : " << endl;
         cin >> b;
+        f << "Введите число: " << b << endl;
         f << b * 2.5121 * pow(10, 11) << '\n';
         break;
 
     case 3:
         float c;
-        f << "Enter your number : " << endl;
         cin >> c;
+        f << "Введите число: " << c << endl;
         f << c * 6.978 * pow(10, 14) << '\n';
         break;
 
     case 4:
         float d;
-        f << "Enter your number : " << endl;
         cin >> d;
+        f << "Введите число: " << d << endl;
         f << d * 1.667 * pow(10, -11) << '\n';
         break;
 
     case 5:
         float j;
-        f << "Enter your number : " << endl;
         cin >> j;
+        f << "Введите число: " << j << endl;
         f << j * 4.187 << '\n';
         break;
 
     case 6:
         float g;
-        f << "Enter your number : " << endl;
         cin >> g;
+        f << "Введите число: " << g << endl;
         f << g * 11630 << '\n';
         break;
 
     case 7:
         float x;
-        f << "Enter your number : " << endl;
         cin >> x;
+        f << "Введите число: " << x << endl;
         f << x * 3.981 * pow(10, -12) << '\n';
         break;
     
     case 8:
         float y;
-        f << "Enter your number : " << endl;
         cin >> y;
+        f << "Введите число: " << y << endl;
         f << y * 0.2388  << '\n';
         break;
 
     case 9:
         float z;
-        f << "Enter your number : " << endl;
         cin >> z;
+        f << "Введите число: " << z << endl;
         f << z * 2778 << '\n';
         break;
 
     case 10:
         float p;
-        f << "Enter your number : " << endl;
         cin >> p;
+        f << "Введите число: " << p << endl;
         f << p * 1.433 * pow(10, -15) << '\n';
         break;
 
     case 11:
         float n;
-        f << "Enter your number : " << endl;
         cin >> n;
+        f << "Введите число: " << n << endl;
         f << n * 8.598 * pow(10, -5) << '\n';
         break;
 
     case 12:
         float m;
-        f << "Enter your number : " << endl;
         cin >> m;
+        f << "Введите число: " << m << endl;
         f << m * 3.6 * pow(10, -4) << '\n';
         break;
     }
-    return 0;
 
     f.close();
     }

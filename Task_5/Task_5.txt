@@ -1,14 +1,15 @@
-If you need from Gcal / min to cal/h tap 1
-If you need from Gcal / min to J/h tap 2
-If you need from Gcal / min to erg/sec tap 3
-If you need from cal/h to Gcal / min tap 4
-If you need from cal/h to J/h tap 5
-If you need from cal/h to erg/sec tap 6
-If you need from J/h to Gcal / min tap 7
-If you need from J/h to cal/h tap 8
-If you need from J/h to erg/sec tap 9
-If you need from erg/sec to Gcal / min tap 10
-If you need from erg/sec to cal/h tap 11
-If you need from erg/sec to J/h tap 12
-Enter your number : 
-0.4187
+Если тебе нужно перевести из Гкал/мин в кал/час нажми 1
+Если тебе нужно перевести из Гкал/мин в Дж/час нажми 2
+Если тебе нужно перевести из Гкал/мин в эрг/с нажми 3
+Если тебе нужно перевести из кал/час в Гкал/мин нажми 4
+Если тебе нужно перевести из кал/час в Дж/час нажми 5
+Если тебе нужно перевести из кал/час в эрг/с нажми 6
+Если тебе нужно перевести из Дж/час в Гкал/мин нажми 7
+Если тебе нужно перевести из Дж/час в кал/час нажми 8
+Если тебе нужно перевести из Дж/час в эрг/с нажми 9
+Если тебе нужно перевести из эрг/с в Гкал/мин нажми 10
+Если тебе нужно перевести из эрг/с в кал/час нажми 11
+Если тебе нужно перевести из эрг/с в Дж/час нажми 12
+Выбранный режим перевода: 5
+Введите число: 1
+4.187
