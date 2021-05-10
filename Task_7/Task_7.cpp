@@ -9,15 +9,27 @@ y = 2 * |x+6| - x 2 , если x < 5 */
 
 using namespace std;
 
+float y, x;
+
+float condition(float x);
+
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	ofstream f;
 	f.open("Task_7.txt");
 
-	float y, x;
 	cin >> x;
+
+	f << "y = " << condition(x);
+
+	f.close();
+}
+
+float condition(float x) {
+
 	if (x > 5)
-		y = 2 * (x * x) +10;
+		y = 2 * (x * x) + 10;
 	else {
 		if (fabs(x) < 0.001)
 			y = 0;
@@ -25,8 +37,5 @@ int main()
 			y = 2 * fabs(x + 6) - x * x;
 		}
 	}
-
-	f << "y = " << y;
-
-	f.close();
+	return(y);
 }
