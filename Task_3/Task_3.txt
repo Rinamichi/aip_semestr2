@@ -1,2 +1,2 @@
-Square of number a = 5929
-Cube of number a = 456533
+ вадрат числа a = 25
+ уб числа a = 125
