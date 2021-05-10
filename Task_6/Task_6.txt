@@ -1,2 +1,5 @@
-So, num3 is the biggest then num3 + 5: 12
-So, num2 is the smallest then num2 - 3: 1
+Первое число = 67
+Второе число = 29
+Третье число = 35
+Отсюда biggest + 5 = 72
+Отсюда smallest - 3 = 26
