@@ -7,23 +7,40 @@
 
 using namespace std;
 
+struct parametr {
+    float a, b;
+};
+
+float S, P;
+float Pi = 3.14;
+
+float square(parametr A);
+float perimetre(parametr A);
+
 int main()
 {
+    setlocale(LC_ALL, "Russian");
     ofstream f;
     f.open("Task_2.txt");
     
-    
-    float a, b, c, S, P;
-    float Pi = 3.14;
+    parametr pA;
 
-    cin >> a >> b;
-    S = Pi * a * b;
-    f << "Square of ellipse = " << S << endl;
-    P = 4 * (((Pi * a * b) + ((a - b) * (a - b))) / (a + b));
-    f << "Perimetre of ellipse = " << P;
-    return 0;
+    cin >> pA.a >> pA.b;
+
+    f << "Длина большей полуоси = " << pA.a << endl;
+    f << "Длина меньшей полуоси = " << pA.b << endl;
+	f << "Площадь эллипса = " << square(pA) << endl;
+    f << "Периметр эллипса = " << perimetre(pA);
 
     f.close();
-
 }
 
+float square(parametr A) {
+    S = Pi * A.a * A.b;
+    return (S);
+}
+
+float perimetre(parametr A) {
+    P = 4 * (((Pi * A.a * A.b) + ((A.a - A.b) * (A.a - A.b))) / (A.a + A.b));
+    return (P);
+}
