@@ -7,18 +7,24 @@
 
 using namespace std;
 
+float x = -2;
+float sum;
+
+float summa(float a);
+
 int main()
 {
+    setlocale(LC_ALL, "Russian");
     ofstream f;
     f.open("Task_4.txt");
 
-    float x = -2;
-
-    f << "Evaluate the expression: " << endl;
-    f << fabs(x) + pow(x, 5) << endl;
-    return 0;
+    f << "x = " << x << endl;
+    f << "Вычисленная сумма = " << summa(x);
 
     f.close();
 }
 
-
+float summa(float x) {
+    sum = fabs(x) + pow(x, 5);
+    return (sum);
+}

@@ -1,2 +1,2 @@
-Evaluate the expression: 
--30
+x = -2
+Вычисленная сумма = -30
