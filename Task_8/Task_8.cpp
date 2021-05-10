@@ -7,23 +7,41 @@
 
 using namespace std;
 
+struct point {
+    float x, y;
+};
+
+const float r = 1;
+
+void area(point A);
+
 int main()
 {
+    setlocale(LC_ALL, "Russian");
+    point pA;
+
+    cin >> pA.x >> pA.y;
+
+    area(pA);
+}
+
+void area(point A) {
+
     ofstream f;
     f.open("Task_8.txt");
 
-    const float r = 1;
-    float x, y;
-    cin >> x >> y;
-    float rc = sqrt(x * x + y * y);
+    float rc = sqrt(A.x * A.x + A.y * A.y);
 
-    bool area1 = (rc < r) && (y > x);
-    bool area2 = (rc < r) && (x > y) && (x < 0);
+    bool area1 = (rc < r) && (A.y > A.x);
+    bool area2 = (rc < r) && (A.x > A.y) && (A.x < 0);
+
+    f << "Координата x: " << A.x << endl;
+    f << "Координата y: " << A.y << endl;
 
     if (area1 || area2)
-        f << "Yes";
+        f << "Да, точка попадает в зашрихованную обасть";
     else
-        f << "No";
+        f << "Нет, точка не попадет в заштрихованную область";
 
     f.close();
 }
