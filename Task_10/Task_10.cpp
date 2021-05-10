@@ -9,14 +9,25 @@ y = |2 * x-1| - 1, если x < -8 */
 
 using namespace std;
 
+float y, x;
+
+float condition(float x);
+
 int main()
 {
-
 	ofstream f;
 	f.open("Task_10.txt");
 
-	float y, x;
 	cin >> x;
+	
+	f << "x = " << x << endl;
+	f << "Отсюда y = "  << condition(x);
+	
+	f.close();
+}
+
+float condition(float x) {
+
 	if (x > -8)
 		y = ((2 + x) * (2 + x)) + 7;
 	else {
@@ -26,8 +37,5 @@ int main()
 			y = fabs(2 * x - 1) - 1;
 		}
 	}
-
-	f << "y = "  << y;
-	
-	f.close();
+	return(y);
 }
