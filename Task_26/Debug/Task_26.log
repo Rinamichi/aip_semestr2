@@ -1,0 +1,4 @@
+﻿  Task_26.cpp
+D:\VS\aip_semestr2\Task_26\Task_26.cpp(22,21): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\VS\aip_semestr2\Task_26\Task_26.cpp(26,21): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Task_26.vcxproj -> D:\VS\aip_semestr2\Task_26\Debug\Task_26.exe
